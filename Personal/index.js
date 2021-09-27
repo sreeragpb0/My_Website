@@ -1,0 +1,21 @@
+$(document).ready(function(){
+    $('#gform').validate({
+        rules:{
+            name:{
+                required:true,
+            },
+            email:{
+                required:true,
+                email:true,
+            },
+            subject:{
+                required:true,
+                minlength:10,
+            },
+            message:{
+                required:true,
+                minlength:10,
+            }
+        }
+    })
+})
